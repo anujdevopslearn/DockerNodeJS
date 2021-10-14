@@ -13,7 +13,6 @@ The application is built with Node.js and already has all environment configured
 ```shell
 docker-compose up
 ```
-
 And then the application and database will be started:
 
 ```shell
