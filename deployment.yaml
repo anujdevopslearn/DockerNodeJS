@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: atcs-deployment
+  labels:
+    app: counterwebapp
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: counterwebapp
+      tier: web
+  template:
+    metadata:
+      labels:
+        app: counterwebapp
+        tier: web
+    spec:
+      containers:
+      - name: counterwebapp
+        image: anujsharma1990/imagefromgithub
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            cpu: 200m
