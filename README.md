@@ -15,6 +15,7 @@ docker-compose up
 ```
 And then the application and database will be started:
 
+
 ```shell
 Starting nodedocker_mongodb_1 ...
 Starting nodedocker_mongodb_1 ... done
