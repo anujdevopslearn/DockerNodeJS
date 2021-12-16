@@ -12,4 +12,6 @@ RUN npm install --silent --progress=false
 
 COPY . $HOME/node_docker
 
+EXPOSE 3000
+
 CMD ["npm", "start"]
