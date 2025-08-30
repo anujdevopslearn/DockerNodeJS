@@ -2,7 +2,7 @@ FROM node:16
 
 ENV HOME=/home/app
 
-RUN apt-get update && apt-get install htop
+RUN apt-get update && apt-get -y install htop
 
 COPY package.json package-lock.json $HOME/node_docker/
 
